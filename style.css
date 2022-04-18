@@ -5,12 +5,22 @@ body{
     align-items: center;
     gap: 200px;
     margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
 }
 .calc{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     height: 450px;
     width: auto;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 13px;
+    padding: 18px;
+    background-color: #96a399;
+    gap: 10px;
+    font-style: inherit;
 }
 .calculator-screen{
     display: flex;
@@ -18,33 +28,64 @@ body{
     justify-content: space-between;
     align-items: flex-end;
     gap: 8px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    background-color: white;
+    font-style: inherit;
 }
 .clear{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-style: inherit;
 }
 .calculator-body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    gap: 5px;
+    font-style: inherit;
 }
 .numerical{
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    font-style: inherit;
    
 }
 .operator{
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    font-style: inherit;
     
 }
 button{
     width: 80px;
     height: 80px;
+    border-radius: 3px;
+    font-size: larger;
+    background-color: white;
+    border: none;
+    font-style: inherit;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
 }
 .clear button{
     height: 40px;
-    width: 80px;
+    width: 165px;
     text-align: center;
+    background-color: #f797d9;
+    border: none;
+    font-style: inherit;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+footer{
+    font-size: larger;
+    font-family: 'Roboto',sans-serif;
 }
