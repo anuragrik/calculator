@@ -36,9 +36,24 @@ function operate(num1,num2,operator){
 
 let buttonCalc=document.querySelectorAll("button");
 let inputVal=document.querySelector(".input-value")
+let resultVal=document.querySelector(".result");
 let arr=[];
 buttonCalc.forEach((e)=>{
     e.addEventListener("click",()=>{
+        if(e.textContent=="CLEAR"){
+            console.log(e.textContent)
+                arr.splice(0,arr.length);
+                arr.shift()
+                console.log(arr)
+                inputVal.textContent="";
+                resultVal.textContent= "";
+                    }else if(e.textContent=="DELETE"){
+                        arr.pop()
+                        inputVal.textContent=arr.join("");
+                        console.log(arr)
+                    }
+                    
+                    else{
         arr.push(e.textContent)
         inputVal.textContent=arr.join("")
         for(let i=0;i<arr.length;i++){ //1+ 1+3 //1+3=
@@ -52,7 +67,6 @@ buttonCalc.forEach((e)=>{
                         let operator1=arr[i];//1
                         console.log(operator1);
                         let answer=operate(number1,number2,operator1);
-                        let resultVal=document.querySelector(".result");
                         resultVal.textContent= answer;
                         console.log(answer)
                         console.log(arr);//1+3=
@@ -63,7 +77,8 @@ buttonCalc.forEach((e)=>{
                 }
             }
         }
-    })
+        
+    }})
 })
 
 // function worker(arr){
