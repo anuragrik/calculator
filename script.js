@@ -14,9 +14,13 @@ function multiply(a,b){
     return a*b
 }
 function divide(a,b){
+    if(b==0){
+        return "Can't divide by 0"
+    }else{
     a=Number(a)
     b=Number(b)
     return a/b
+    }
 }
 
 function operate(num1,num2,operator){
@@ -80,51 +84,6 @@ buttonCalc.forEach((e)=>{
         
     }})
 })
-
-// function worker(arr){
-//     for(let i=0;i<arr.length,i++){
-//         if(arr[i]=="+" || arr[i]=="-"||arr[i]=="*"||arr[i]=="/"){
-//             let val1=arr.slice(0,i)
-//             let val2=arr.slice(i+1,arr.length+1)
-//             let operator=arr[i]
-//             let nextOperate=arr[i+1];
-//             let resultVal=document.querySelector(".result");
-//             resultVal.textContent= operate(val1,val2,operator1);
-//         }
-//     }
-// }
-
-// function work(inpValArr){
-//     for(let i=0;i<inpValArr.length;i++){
-//         if(inpValArr[i]=="+" || inpValArr[i]=="-"||inpValArr[i]=="*"||inpValArr[i]=="/"){
-//             // let val1=inpValArr.slice(0,i)
-//             // let val2=inpValArr.slice(i+1,arr.length+1)
-//             // let operator=inpValArr[i]
-//             return nextOperate=inpValArr[i+1];
-//         }}
-// }
-
-// let buttonCalc=document.querySelectorAll("button");
-// let inpVal=document.querySelector(".input-value")
-// let inpValArr=[]
-// buttonCalc.forEach((e)=>{
-//     e.addEventListener("click", ()=>{
-//         inpValArr.push(e.textContent);
-//         inpVal.textContent=inpValArr.join("");
-//         if(e.textContent=="=" || e.textContent==work(inpValArr)){
-//             console.log(inpValArr)
-//             for(let i=0;i<inpValArr.length;i++){
-//                 if(inpValArr[i]=="+" || inpValArr[i]=="-"||inpValArr[i]=="*"||inpValArr[i]=="/"){
-//                     let numeral1=inpValArr.slice(0,i).join("");
-//                     let numeral2=inpValArr.slice(i+1,inpValArr.length-1).join("");
-//                     let operator1=inpValArr[i];
-//                     let resultVal=document.querySelector(".result");
-//                     resultVal.textContent= operate(numeral1,numeral2,operator1);
-//                 }
-//             }
-//     }
-// })})
-
 
 
         
