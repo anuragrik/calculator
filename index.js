@@ -16,7 +16,7 @@ keys.forEach((e)=>e.addEventListener("click", function(){
             display.innerText="0"
         }
     }else if(e.textContent==="="){
-        if(previousKeyType!="operator")
+        if(previousKeyType!="operator" && num1!="" && op!="")
         {num2=display.textContent
         display.textContent=doMath(num1, op, num2)
         num1=display.textContent}
