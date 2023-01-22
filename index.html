@@ -4,51 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    <script src="script.js" defer></script>
-    <div class="calc">
-        <div class="calculator-screen">
-            <div class="input-value"></div>
-            <div class="result"></div> 
+    <div class="container">
+        <div id="io-box"> </div>
+        <div class="remove">
+            <button id="clear" class="keys">CLEAR</button>
+            <button id="delete" class="keys">DELETE</button>
         </div>
-        <div class="clear">  
-            <button class="clear-all">CLEAR</button>
-            <button class="delete">DELETE</button>
-        </div>
-        <div class="calculator-body">
-            <div class="numerical">
-                <div>
-                    <button class="hoverable">1</button>
-                    <button class="hoverable">2</button>
-                    <button class="hoverable">3</button>
-                </div>
-                <div>
-                    <button class="hoverable">4</button>
-                    <button class="hoverable">5</button>
-                    <button class="hoverable">6</button>
-                </div>
-                <div>
-                    <button class="hoverable">7</button>
-                    <button class="hoverable">8</button>
-                    <button class="hoverable">9</button>
-                </div>
-                <div>
-                    <button class="hoverable">0</button>
-                    <button class="hoverable">.</button>
-                    <button class="hoverable">=</button>
-                </div>
+        <div class="main-body">
+            <div>
+                <button id="numero" class="keys main">7</button>
+                <button id="numero" class="keys main">8</button>
+                <button id="numero" class="keys main">9</button>
+                <button id="div-op" class="keys main">÷</button>
             </div>
-            <div class="operator">
-                <button class="hoverable">+</button>
-                <button class="hoverable">-</button>
-                <button class="hoverable">*</button>
-                <button class="hoverable">/</button>
+            <div>
+                <button id="numero" class="keys main">4</button>
+                <button id="numero" class="keys main">5</button>
+                <button id="numero" class="keys main">6</button>
+                <button id="multi-op" class="keys main">x</button>
+            </div>
+            <div>
+                <button id="numero" class="keys main">1</button>
+                <button id="numero" class="keys main">2</button>
+                <button id="numero" class="keys main">3</button>
+                <button id="minus-op" class="keys main">-</button>
+            </div>
+            <div>
+                <button id="point" class="keys main">.</button>
+                <button id="numero" class="keys main">0</button>
+                <button id="eq-op" class="keys main">=</button>
+                <button id="plus-op" class="keys main">+</button>
             </div>
         </div>
     </div>
-    <footer>Copyright ©2022 anuragrik</footer>
+    <script src="index.js"></script>
 </body>
 </html>
