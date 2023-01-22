@@ -1,3 +1,5 @@
 # calculator
-Created a simple calculator with the help of HTML, CSS and JavaScript. 
-NOTE- The calculator does not have keyboard support yet!
+
+A simple calculator application.
+
+Deployed on Netlify - https://nimble-clafoutis-91b67f.netlify.app/
